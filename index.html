@@ -29,7 +29,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
+                    <!-- <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li> -->
                     <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
@@ -97,7 +97,7 @@
         </section>
 
         <!-- QUALIFICATION -->
-        <section class="qualification section bd-container" id="qualification">
+        <section class="qualification section bd-container">
             <span class="section-subtitle">Experience and Education</span>
             <h2 class="section-title">Qualification</h2>
 
@@ -196,14 +196,14 @@
             <h2 class="section-title">Portfolio</h2>
 
             <div class="portfolio__nav">
-                <span class="portfolio__item">All</span>
-                <span class="portfolio__item">Web</span>
-                <span class="portfolio__item">App</span>
-                <span class="portfolio__item">Misc</span>
+                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                <span class="portfolio__item" data-filter=".web">Web</span>
+                <span class="portfolio__item" data-filter=".app">App</span>
+                <span class="portfolio__item" data-filter=".misc">Misc</span>
             </div>
 
             <div class="portfolio__container bd-grid">
-                <div class="portfolio__content">
+                <div class="portfolio__content mix misc">
                     <a href="#">
                         <img src="assets/images/riscAssemblerSim.jpg" alt="" class="portfolio__img">
                     </a>
@@ -214,7 +214,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio__content">
+                <div class="portfolio__content mix app">
                     <a href="#">
                         <img src="assets/images/stickhero.png" alt="" class="portfolio__img">
                     </a>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio__content">
+                <div class="portfolio__content mix misc">
                     <a href="#">
                         <img src="assets/images/shellvetica.png" alt="" class="portfolio__img">
                     </a>
@@ -235,12 +235,92 @@
                         <a href="#" class="button button-link">View Details</a>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
+
+        <!-- TESTIMONIALS
+        section. -->
+
+        <!-- CONTACT ME -->
+        <section class="contact section bd-container" id="contact">
+            <span class="section-subtitle">For projects</span>
+            <h2 class="section-title">Contact me</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class="bx bx-home contact__icon"></i>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__description">New Delhi, India</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class="bx bx-envelope contact__icon"></i>
+                        <h3 class="contact__title">Gmail</h3>
+                        <span class="contact__description">saksham22434@iiitd.ac.in</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class="bx bx-phone contact__icon"></i>
+                        <h3 class="contact__title">Phone</h3>
+                        <span class="contact__description">+91-81788-50599</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class="bx bx-chat contact__icon"></i>
+                        <h3 class="contact__title">Chat</h3>
+                        <div>
+                            <a href="#" class="contact__social"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="contact__social"><i class="bx bxl-github"></i></a>
+                            <a href="#" class="contact__social"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="email" placeholder="Email" class="contact__input">
+                    </div>
+
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Project" class="contact__input">
+                        <input type="number" placeholder="Number" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
+
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">Saksham Singh</h1>
+            <p class="footer__description">I am Saksham Singh, and this was my website</p>
+
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class='bx bxl-github'></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <p class="footer__copy">&#169; 2023 Saksham Singh. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- MIXITUP FILTER -->
+    <script src="assets/js/mixitup.min.js"></script>
     
 
 
